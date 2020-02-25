@@ -13,10 +13,10 @@ https://rclone.org/
 https://rclone.org/s3/#minio
 https://rclone.org/install/
 
-- INSTALL RCLONE MAC WITH BREW
+- INSTALL RCLONE MAC WITH BREW :
 brew install rclone
 
-- INSTALL RCLONE Linux/macOS/BSD
+- INSTALL RCLONE Linux/macOS/BSD :
 curl https://rclone.org/install.sh | sudo bash
 
 
