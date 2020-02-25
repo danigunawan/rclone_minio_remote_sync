@@ -26,24 +26,24 @@ rclone config
 
 CONFIG EXAMPLE :
 
-[yournameremote]
-type = s3
-provider = Minio
-access_key_id = your_access_key_id
-secret_access_key = your_secret_access_key
-endpoint = http://your_endpoint.com
-acl = public-read
-bucket_acl = private
-upload_cutoff = 200M
-chunk_size = 5M
-copy_cutoff = 5G
-disable_checksum = false
-upload_concurrency = 4
-force_path_style = true
-v2_auth = false
-list_chunk = 1000
-env_auth = false
-region = us-east-1
+- [yournameremote]
+- type = s3
+- provider = Minio
+- access_key_id = your_access_key_id
+- secret_access_key = your_secret_access_key
+- endpoint = http://your_endpoint.com
+- acl = public-read
+- bucket_acl = private
+- upload_cutoff = 200M
+- chunk_size = 5M
+- copy_cutoff = 5G
+- disable_checksum = false
+- upload_concurrency = 4
+- force_path_style = true
+- v2_auth = false
+- list_chunk = 1000
+- env_auth = false
+- region = us-east-1
 
 
 ### BASIC SYNC MINIO WITH RCLONE
