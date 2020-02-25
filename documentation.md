@@ -21,7 +21,7 @@ curl https://rclone.org/install.sh | sudo bash
 
 
 ### CONFIG RCLONE SYNC MINIO
-- RCLONE CONFIG
+- RCLONE CONFIG :
 rclone config
 
 CONFIG EXAMPLE :
