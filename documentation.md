@@ -49,13 +49,13 @@ CONFIG EXAMPLE :
 ### BASIC SYNC MINIO WITH RCLONE
 rclone help
 
-- SYNC REMOTE TO LOCAL
+- SYNC REMOTE TO LOCAL :
 rclone sync videoanalytics: /home/yourfolder
 
-- SYNC REMOTE TO LOCAL BASH
+- SYNC REMOTE TO LOCAL BASH :
 sh /var/private/rclone_remote2local.sh
 
-- SYNC LOCAL TO REMOTE BASH
+- SYNC LOCAL TO REMOTE BASH :
 sh /var/private/remote_local2remote.sh
 
 
