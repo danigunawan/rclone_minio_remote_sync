@@ -1,14 +1,14 @@
 ## DOCUMENTATION ##
-# Author : Dani Gunawan
-# Date   : 25 February 2020
+##### Author : Dani Gunawan #####
+##### Date   : 25 February 2020 ######
 
-# INSTALL MINIO SERVER DOCKER 
+### INSTALL MINIO SERVER DOCKER 
 https://docs.min.io/docs/minio-docker-quickstart-guide.html
 
-# INSTALL MINIO CLIENT DOCKER
+### INSTALL MINIO CLIENT DOCKER
 https://docs.min.io/docs/minio-client-quickstart-guide.html
 
-# INSTALL RCLONE
+### INSTALL RCLONE
 https://rclone.org/
 https://rclone.org/s3/#minio
 https://rclone.org/install/
@@ -20,7 +20,7 @@ brew install rclone
 curl https://rclone.org/install.sh | sudo bash
 
 
-# CONFIG RCLONE SYNC MINIO
+### CONFIG RCLONE SYNC MINIO
 - RCLONE CONFIG
 rclone config
 
@@ -46,7 +46,7 @@ env_auth = false
 region = us-east-1
 
 
-# BASIC SYNC MINIO WITH RCLONE
+### BASIC SYNC MINIO WITH RCLONE
 rclone help
 
 - SYNC REMOTE TO LOCAL
@@ -59,19 +59,19 @@ sh /var/private/rclone_remote2local.sh
 sh /var/private/remote_local2remote.sh
 
 
-# CRONTAB
+### CRONTAB
 crontab -e
 
 add every 1 minutes check sync :
 
-# MINIO SYNC (EVERY 1 MINUTES)
+### MINIO SYNC (EVERY 1 MINUTES)
 SETIAP 2 MENIT :
 */2 * * * * root /var/private/rclone_remote2local.sh
 
 SETIAP MENIT :
 * * * * * root /var/private/rclone_remote2local.sh
 
-# IF USING WEBMIN
+### IF USING WEBMIN
 - INSTALL WEBMIN
 https://ipaddress:10000/cron/?xnavigation=1
 
@@ -85,16 +85,16 @@ selected only minutes every 3 minutes :
 
 - save and run
 
-# SERVICE CRON RESTART
+### SERVICE CRON RESTART
 service cron restart
 
-# WATCH SYNC
+### WATCH SYNC
 sudo apt-get update -y
 sudo apt-get install -y inotify-tools
 
 sh /var/private/rclone_watch_local.sh
 
-# WATCH DIR
+### WATCH DIR
 cd /home/yourfolder
 watch -d ls -l
 
